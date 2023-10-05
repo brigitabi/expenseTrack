@@ -13,7 +13,6 @@ import {
 import { db } from './firebase';
 import ThemeToggle from './ThemeToggle';
 
-
 export default function Home() {
   const [items, setItems] = useState([]);
 
@@ -59,10 +58,12 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4 bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4 bg-white dark:bg-gray-800">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
         <ThemeToggle />
-        <h1 className="text-4xl p-4 text-center text-black">Expense tracker</h1>
+        <h1 className="text-4xl p-20 text-center text-black dark:text-white">
+          Expense tracker
+        </h1>
         <div className="bg-slate-100 p-4 rounded-lg">
           <form className="grid grid-cols-6 items-center text-black">
             <input

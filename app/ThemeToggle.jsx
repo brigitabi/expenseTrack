@@ -5,19 +5,23 @@ import { ThemeContext } from './ThemeContext';
 const ThemeToggle = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'));
+  };
+
   return (
     <div>
       {theme === 'dark' ? (
         <div
           className="flex items-center cursor-pointer"
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={toggleTheme}
         >
           <HiSun />
         </div>
       ) : (
         <div
           className="flex items-center cursor-pointer"
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={toggleTheme}
         >
           <HiMoon />
         </div>

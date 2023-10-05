@@ -8,17 +8,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      backgroundColor: { 
-        primary: 'var(--color-bg-primary)', 
-      }, 
-      textColor: { 
-        accent: 'var(--color-text-accent)', 
+      backgroundColor: {
+        primary: 'var(--color-bg-primary)',
+      },
+      textColor: {
+        accent: 'var(--color-text-accent)',
         primary: 'var(--color-text-primary)',
-      }
+      },
     },
   },
   plugins: [],
-}
-
-
-
+};
