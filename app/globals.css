@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-primary text-primary;
+}
+
+.rounded-div {
+  @apply border rounded-2xl shadow-md bg-primary px-2 max-w-screen-xl w-full mx-auto;
+}
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+}
+
+.dark {
+  --color-bg-primary: #180f0d;
+  --color-text-primary: rgb(239, 233, 233);
+}
+
+.light {
+  --color-bg-primary: #fdfeff;
+  --color-text-primary: rgb(8, 0, 0);
+}
