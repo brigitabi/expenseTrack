@@ -101,7 +101,7 @@ export default function Home() {
                 </div>
                 <button
                   onClick={() => deleteItem(item.id)}
-                  className="ml-8 p-4 border-l-2 border-white hover:bg-slate-400 w-16"
+                  className="ml-8 p-4 border-l-2 border-white hover:bg-slate-300 w-16"
                 >
                   X
                 </button>
